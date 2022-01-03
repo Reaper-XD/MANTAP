@@ -4,8 +4,7 @@ import marshal, zlib, base64, os, sys
 try:
     r = sys.argv[1]
 except:
-    exit("Masukkan : python2 ....py")
-    exit("Contoh : python2 namafilenya.py")
+    exit("Masukkan : python2 ....py CONTOH : python2 namafilenya.py")
 
 if not os.path.isfile(r):
     exit("File Tidak Ditemukan!")
