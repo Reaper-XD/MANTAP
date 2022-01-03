@@ -4,7 +4,8 @@ import marshal, zlib, base64, os, sys
 try:
     r = sys.argv[1]
 except:
-    exit("usage : python2 decode.py file.py")
+    exit("Masukkan : python2 ....py")
+    exit("Contoh : python2 namafilenya.py")
 
 if not os.path.isfile(r):
     exit("File Tidak Ditemukan!")
@@ -16,5 +17,5 @@ d = base64.b64encode(c)
 
 sv = 'import marshal, zlib, base64\nexec(marshal.loads(zlib.decompress(base64.b64decode("{}"))))'
 
-open("hasil.py", "w").write(sv.format(d))
-exit("berhasil : save to as hasil.py")
+open("ini_.py", "w").write(sv.format(d))
+exit("berhasil : file tersimpan ini_.py")
